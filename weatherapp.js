@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use("/public",express.static('public'));
 
 app.get("/",(request,response)=>{
-    response.sendFile(__dirname+"/weather.html");
+    response.sendFile(__dirname+"/index.html");
 });
 
 app.post("/",(request,response)=>{
